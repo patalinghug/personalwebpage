@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+	    font-size: 13px; 
+        }
+
+        th {
+        background-color: #f2f2f2;
+        }
+
+       .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Arial", sans-serif;
+        }
+
+        .header {
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            font-weight: bold;
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+
+        .aside {
+            padding: 15px;
+            color: #000000;
+            text-align: left;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Kris Michaela J. Patalinghug</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>            
+                <a href="About ME.html" style="text-decoration: none"><li>About ME</li></a>
+                <a href="Subjects Taken.html" style="text-decoration: none"><li>Subject Taken</li></a>
+                <a href="Subject Enrolled.html" style="text-decoration: none"><li>Enrolled</li></a>
+                <a href="Contact ME.html" style="text-decoration: none"><li>Contact Me</li></a>
+                <a href="Favourites.html" style="text-decoration: none"><li>My Favorites</li></a>
+            </ul>
+        </div>
+
+        <div class="col-7 col-s-9">
+            <h1>Subject Taken</h1>
+            <table>
+                <tr>
+                    <td colspan="10" style="font-weight: bold;">SUBJECT</td>
+                    <td colspan="10" style="font-weight: bold;">DESCRIPTION</td>
+                    <td colspan="10" style="font-weight: bold;">UNITS</td>
+                </tr>
+                <!-- Adding subjects -->
+                <tr>
+                    <td colspan="10">CSIT 4</td>
+                    <td colspan="10">DATA STRUCTURES AND ALGORITHMS</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">ITP 3</td>
+                    <td colspan="10">NETWORKING 1 (CISCO 1: NETWORKING BASICS)</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">ITEL 1A</td>
+                    <td colspan="10">IT ELECTIVE 1: PLATFORM TECHNOLOGIES</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">ITEL 2A</td>
+                    <td colspan="10">IT ELECTIVE 2: PLATFORM TECHNOLOGIES</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">EP 1A</td>
+                    <td colspan="10">ENGLISH PROFICIENCY - ACCELERATE 1</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <!-- Adding subjects from the first semester of 2021 -->
+                <tr>
+                    <td colspan="10">HIST 1</td>
+                    <td colspan="10">READINGS IN PHILIPPINE HISTORY / MGA BABASAHIN HINGGIL SA KASAYSAYAN NG PILIPINAS</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">SOC ECON 1</td>
+                    <td colspan="10">THE CONTEMPORARY WORLD / ANG KASALUKUYAN DAIGDIG</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">SOC SC 1</td>
+                    <td colspan="10">UNDERSTANDING THE SELF / PAG-UNAWA SA SARILI</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">NSTP 11</td>
+                    <td colspan="10">NSTP 1-CIVIC WELFARE TRNG SERVICE (CWTS)</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">PE 1</td>
+                    <td colspan="10">PATH FIT 1: MOVEMENT COMPETENCY TRAINING</td>
+                    <td colspan="10">2</td>
+                </tr>
+                <tr>
+                    <td colspan="10">OC 1</td>
+                    <td colspan="10">ORIENTATION COURSE 1</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">ACCTG A</td>
+                    <td colspan="10">FUNDAMENTALS OF ACCOUNTING</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">FAR 1</td>
+                    <td colspan="10">FINANCIAL ACCOUNTING AND REPORTING</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">MAN ECON</td>
+                    <td colspan="10">MANAGERIAL ECONOMICS</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">CFAS</td>
+                    <td colspan="10">CONCEPTUAL FRAMEWORK & ACCOUNTING STANDARDS</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <!-- Adding subjects from the second semester of 2021 -->
+                <tr>
+                    <td colspan="10">B LAW 1</td>
+                    <td colspan="10">LAW ON OBLIGATION AND CONTRACTS</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">COST ACC</td>
+                    <td colspan="10">COST ACCOUNTING AND CONTROL</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">ECON DEV</td>
+                    <td colspan="10">ECONOMIC DEVELOPMENT</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">ENGL A</td>
+                    <td colspan="10">GRAMMAR AND SPEECH ENHANCEMENT</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">INTER ACC1</td>
+                    <td colspan="10">INTERMEDIATE ACCOUNTING 1</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">MAN SCI</td>
+                    <td colspan="10">MANAGEMENT SCIENCE</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">MATH 1</td>
+                    <td colspan="10">MATHEMATICS IN THE MODERN WORLD/MATEMATIKA SA MAKABAGONG DAIGDIG</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">NSTP 12C</td>
+                    <td colspan="10">NSTP 2-CIVIC WELFARE TRNG SERVICE (CWTS)</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">PE 2</td>
+                    <td colspan="10">PATH FIT 2: FITNESS TRAINING</td>
+                    <td colspan="10">2</td>
+                </tr>
+                <!-- Adding subjects from the summer of 2022 -->
+                <tr>
+                    <td colspan="10">COM 1</td>
+                    <td colspan="10">PURPOSIVE COMMUNICATION / MALAYUNING KOMUNIKASYON</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">HUM 1</td>
+                    <td colspan="10">ARTS APPRECIATION</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">GE EL 1</td>
+                    <td colspan="10">ENVIRONMENTAL SCIENCE (M.S.T. ELECTIVE)</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <!-- Adding subjects from the first semester of 2022 -->
+                <tr>
+                    <td colspan="10">RIZAL CRS.</td>
+                    <td colspan="10">LIFE & WORKS OF RIZAL</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">OC 1</td>
+                    <td colspan="10">ORIENTATION COURSE 1</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">CSIT 1</td>
+                    <td colspan="10">INTRODUCTION TO COMPUTING</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">CSIT 2</td>
+                    <td colspan="10">FUNDAMENTALS OF PROGRAMMING/COMPUTER PROGRAMMING 1</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">PE 3</td>
+                    <td colspan="10">PATH FIT 3: SPORTS (INDIVIDUAL/DUAL)</td>
+                    <td colspan="10">2</td>
+                </tr>
+                <tr>
+                    <td colspan="10">GE EL 3</td>
+                    <td colspan="10">INDIGENOUS CREATIVE WORKS</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">EP 1S</td>
+                    <td colspan="10">ENGLISH PROFICIENCY - START I</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <!-- Adding subjects from the second semester of 2022 -->
+                <tr>
+                    <td colspan="10">CSIT 3</td>
+                    <td colspan="10">INTERMEDIATE PROGRAMMING / COMPUTER PROGRAMMING 2</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">ITP 1</td>
+                    <td colspan="10">IT FUNDAMENTALS</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">ITP 2</td>
+                    <td colspan="10">DISCRETE MATHEMATICS</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">GE EL 2</td>
+                    <td colspan="10">GENDER AND SOCIETY</td>
+                    <td colspan="10">3</td>
+                </tr>
+
+            </table>
+          <script>
+                var unitCells = document.querySelectorAll('td:nth-child(3n)');
+
+                
+                var totalUnits = 0;
+
+               
+                unitCells.forEach(function(cell) {
+                    totalUnits += parseInt(cell.textContent);
+                });
+
+                
+                var totalRow = document.createElement('tr');
+                totalRow.innerHTML = `
+                    <td colspan="20" style="text-align: right; font-weight: bold;">Credited Total Units:</td>
+                    <td colspan="10" style="font-weight: bold;">${114}</td>
+                `;
+
+               
+                document.querySelector('table').appendChild(totalRow);
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p style="font-weight: bold;">© 2023 - 2024 ITP4 | All Right Reserved</p>
+    </div>
+
+</body>
+
+</html>
